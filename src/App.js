@@ -7,13 +7,6 @@ import "prismjs/components/prism-clike";
 import "prismjs/components/prism-javascript";
 import "prismjs/themes/prism.css";
 
-
-function getSize(width) {
-    if(width > 500) return 500
-    return width - 100;
-
-}
-
 function App() {
 
     let [text, setText] = useState(`Enter your text here...`);
@@ -38,6 +31,13 @@ function App() {
             />
         </div>
     );
+}
+
+function getSize(width) {
+    if(!width) return 100;
+    if(width > 500) return 500;
+    return width - 100;
+
 }
 
 function useWindowSize() {
