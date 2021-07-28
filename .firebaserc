@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "qr-code-generator-react": {
+      "hosting": {
+        "apps": [
+          "simple-qr-generator"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "qr-code-generator-react"
+  }
+}
